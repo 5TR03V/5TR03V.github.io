@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Мой эксперимент с CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Резюме</h1>
+        <p class="learned-ok">Биография.</p>
+        <p class="learned-ok">Образование.</p>
+        <p class="learned-ok">Текущие навыки.</p>
+        <p class="learned-ok">Освоенные технологии.</p>
+        <p class="learned-ok">Софт-скиллы.</p>
+    </body>
+    <style>
+    h1 {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        border: 1px solid rgb(255, 0, 0);
+    }
+    p {
+        color: rgb(255, 170, 0);
+    }
+    body {
+        font-family: Copperplate Gothic, serif;
+        font-size: xx-large;
+    }
+    h1 {
+        color: rgb(255, 255, 255);
+    }
+    .learned-ok {
+        color: rgb(128, 0, 0);
+    }
+    .learning-in-progress {
+        color: rgb(255, 0, 0);
+    }
+    .not-learned {
+    color: rgb(72, 255, 0);
+    }
+    </style>
+</html>
+
+
+<script>
+// Индивидуальное задание 2
+alert("Индивидуальное задание 2")
+var name = prompt('Введите имя');
+var admin = name;
+alert("admin " +admin);
+
+// Индивидуальное задание 3
+alert("Индивидуальное задание 3")
+while (1) {
+var age = prompt("Ваш возраст?");
+if (confirm("Вы уверены, что вам "+age + "?"))
+break;
+}
+alert("Вам "+ age)
+
+// Индивидуальное задание 1
+alert("Индивидуальное задание 1")
+if (confirm('Доброго времени суток, это функция вычислит максимум двух чисел')){
+    var a = prompt('Введите A','...');
+    var b = prompt('Введите B','...');
+}
+
+function max(a,b)
+{
+    if (a>b)
+    return (a+ " больше " +b)
+    else
+    return (a+ " меньше " +b);
+}
+alert (max(a,b))
+</script>
+
