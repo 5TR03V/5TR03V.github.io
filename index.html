@@ -2,76 +2,102 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Мой эксперимент с CSS</title>
+        <title>Моё резюме</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Резюме</h1>
-        <p class="learned-ok">Биография.</p>
-        <p class="learned-ok">Образование.</p>
-        <p class="learned-ok">Текущие навыки.</p>
-        <p class="learned-ok">Освоенные технологии.</p>
-        <p class="learned-ok">Софт-скиллы.</p>
-    </body>
-    <style>
-    h1 {
-        color: rgb(255, 255, 255);
-        background-color: rgb(0, 0, 0);
-        border: 1px solid rgb(255, 0, 0);
-    }
-    p {
-        color: rgb(255, 170, 0);
-    }
-    body {
-        font-family: Copperplate Gothic, serif;
-        font-size: xx-large;
-    }
-    h1 {
-        color: rgb(255, 255, 255);
-    }
-    .learned-ok {
-        color: rgb(128, 0, 0);
-    }
-    .learning-in-progress {
-        color: rgb(255, 0, 0);
-    }
-    .not-learned {
-    color: rgb(72, 255, 0);
-    }
-    </style>
+        <table
+        align="center"
+        style="width:100%;">
+        <table
+        border="15"
+        bgcolor="#FFA500"
+        style="width:100%; border-radius:15px;">
+        <tr>
+            <th>
+                <h1>Резюме</h1>
+                <h2>Строев Александр АДБ-19-08</h2>
+            </th>
+        </tr>
+    </table>
+    
+    <table
+    border="15"
+    bgcolor="#FFDAB9"
+    cellpadding="10"
+    style="width:100%; border-radius:15px;">
+    <tr>
+<td
+rowspan="2"
+style="width:100%">
+<h1>Резюме</h1>
+
+<p style="text-indent:20px">
+    <b>ФИО:</b>Строев Александр Евгеньевич</p>
+
+<p style="text-indent:20px">
+    <b>Цель: </b>Получение новых знаний и опыта в сфере программирования</p>
+
+<p style="text-indent:20px">
+    <b>Образование: </b>Среднее полное, неоконченное высшее</p>
+
+<p 
+align="justify" 
+style="text-indent:20px">
+    <b>Текущие навыки и освоенные технологии (языки программирования, фреймворки): </b>
+    Имею общее представление об языках программирования: 
+    C, C++, C#, Python. Знаком с основными этапами разработки объектов Active X с помощью MFC, а также с помощью шаблонов библиотеки ATL.
+    Знаком с основными принципами и технологиями создания и взаимодействия клиент-серверных приложений и имею навыки создания COM – сервера и COM – клиента.
+    Знаком с СУБД MySQL и имею базовый навык работы в ней. Знаком с созданием простейших графических приложений, на базе создания своей игры.
+    Знаком с основными паттернами проектирования. Знаком с основными способами синхронизации потоков(Mutex, Critical section, Semaphore).
+    Имею первичное знакомство с .NET Framework.
+    </p>
+
+<p 
+align="justify" 
+style="text-indent:20px">
+    <b>Софт-скиллы: </b>Умею работать в команде, коммуникабелен, самоорганизован, умею эффективно организовать свою работу и грамотно распоряжаться временем.
+    Умею работать с информацией, искать её, анализировать, делать выводы.
+    Готов учиться и узнавать новое
+    </p>
+
+</td>
+
+<td bgcolor="#FFA500">
+    <img src="image.jpg" width="300" height="400">
+</td>
+
+</tr>
+
+<tr>
+<td
+bgcolor="#FFA500"
+align="center">
+<h2>Важные ссылки:</h2>
+<p>
+    <a href="https://vk.com/vleksvndr">Вконтакте</a>
+</p>    
+    <a href="https://www.youtube.com/watch?v=71NAThAf5yw">Важное видео 1</a>
+</p>
+    <a href="https://www.youtube.com/watch?v=5pUzsJ-MYiI">Важное видео 2</a>
+</p>
+</td>
+</tr>
+</table>
+
+<table
+border="15"
+bgcolor="#FFA500"
+height="10"
+cellpadding="10"
+style="width:100%; border-radius:15px;">
+<tr>
+<th>
+<h3>Москва 2022</h3>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table>
 </html>
-
-
-<script>
-// Индивидуальное задание 2
-alert("Индивидуальное задание 2")
-var name = prompt('Введите имя');
-var admin = name;
-alert("admin " +admin);
-
-// Индивидуальное задание 3
-alert("Индивидуальное задание 3")
-while (1) {
-var age = prompt("Ваш возраст?");
-if (confirm("Вы уверены, что вам "+age + "?"))
-break;
-}
-alert("Вам "+ age)
-
-// Индивидуальное задание 1
-alert("Индивидуальное задание 1")
-if (confirm('Доброго времени суток, это функция вычислит максимум двух чисел')){
-    var a = prompt('Введите A','...');
-    var b = prompt('Введите B','...');
-}
-
-function max(a,b)
-{
-    if (a>b)
-    return (a+ " больше " +b)
-    else
-    return (a+ " меньше " +b);
-}
-alert (max(a,b))
-</script>
-
